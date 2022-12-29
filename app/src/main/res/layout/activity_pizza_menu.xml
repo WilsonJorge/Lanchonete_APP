@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PizzaMenu">
+
+    <RelativeLayout
+        android:id="@+id/col_left_pizza_menu"
+        android:layout_width="230dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"/>
+    <ScrollView
+        android:id="@+id/scroll_pizza_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:id="@+id/row_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_pizza_menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pizza
+                    Menu"
+                    android:textSize="40sp"
+                    android:layout_margin="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/row_pizza_menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_pizza_1"
+                    android:layout_width="330dp"
+                    android:layout_height="190dp"
+                    android:layout_centerHorizontal="true"
+                    app:cardCornerRadius="40dp"
+                    app:cardBackgroundColor="@color/cardview_light_background">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/tv_pizza_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="80dp"
+                            android:text="Pizza Margarita"
+                            android:textSize="20sp"
+                            android:textColor="@color/orange"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:id="@+id/tv_info_pizza_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tv_pizza_1"
+                            android:layout_marginLeft="80dp"
+                            android:textSize="14dp"
+                            android:textColor="@color/black"/>
+
+                        <RatingBar
+                            android:id="@+id/rating_pizza_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:isIndicator="false"
+                            android:progressTint="@color/black"
+                            android:layout_below="@id/tv_info_pizza_1"
+                            android:layout_marginLeft="80dp"
+                            style="@style/Widget.AppCompat.RatingBar.Indicator"/>
+                        <TextView
+                            android:id="@+id/tv_preco_pizza1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/rating_pizza_1"
+                            android:layout_marginLeft="80dp"
+                            android:text="650.00MT"
+                            android:textColor="@color/pink"
+                            android:textSize="20sp"
+                            android:textStyle="bold"/>
+                    </RelativeLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/pop_1"
+                    android:elevation="2dp"
+                    android:layout_margin="4dp"/>
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fab_pizza_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="6dp"
+                    android:backgroundTint="@color/cardview_light_background"
+                    android:src="@drawable/ic_baseline_add_24"
+                    android:tint="@color/cardview_light_background" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/row_title_"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_menu_hamburguer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="40sp"
+                    android:layout_margin="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/row_hamburguer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_hamburguer_1"
+                    android:layout_width="330dp"
+                    android:layout_height="190dp"
+                    android:layout_centerHorizontal="true"
+                    app:cardCornerRadius="40dp"
+                    app:cardBackgroundColor="@color/cardview_light_background">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/tv_items_Hamburguer_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="80dp"
+                            android:text="Pizza Mexicana"
+                            android:textSize="20sp"
+                            android:textColor="@color/orange"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:id="@+id/tv_info_hamburguer_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tv_items_Hamburguer_1"
+                            android:layout_marginLeft="80dp"
+                            android:textSize="14dp"
+                            android:textColor="@color/black"/>
+
+                        <RatingBar
+                            android:id="@+id/rating_hamburguer_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:isIndicator="false"
+                            android:progressTint="@color/black"
+                            android:layout_below="@id/tv_info_hamburguer_1"
+                            android:layout_marginLeft="80dp"
+                            style="@style/Widget.AppCompat.RatingBar.Indicator"/>
+                        <TextView
+                            android:id="@+id/tv_preco_hamburguer1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/rating_hamburguer_1"
+                            android:layout_marginLeft="80dp"
+                            android:text="900.00MT"
+                            android:textColor="@color/pink"
+                            android:textSize="20sp"
+                            android:textStyle="bold"/>
+                    </RelativeLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/pop_3"
+                    android:elevation="2dp"
+                    android:layout_margin="4dp"/>
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fab_hamburguer_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="6dp"
+                    android:backgroundTint="@color/cardview_light_background"
+                    android:src="@drawable/ic_baseline_add_24"
+                    android:tint="@color/cardview_light_background" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</FrameLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Projecto FireBase</string>
+    <string name="login">Login</string>
+    <string name="texto_cadastro">Create an account </string>
+    <string name="texto_tela_cadastro">Sign Up</string>
+
+    <style name="pizza">Pizza</style>
+
+    <style name="hamburguer">Hamburguer</style>
+
+    <style name="inform">Hamburguerllllllllllllllllllllllllllllllllllllllllllllllllll</style>
+</resources>

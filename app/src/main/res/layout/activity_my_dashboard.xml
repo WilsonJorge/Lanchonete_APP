@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyDashboard">
+    <RelativeLayout
+        android:id="@+id/col_left"
+        android:layout_width="130dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:id="@+id/row_pizza"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_pizza"
+                    android:layout_width="300dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="16dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="40dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/tv_pizza"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pizza Margarita"
+                            android:textSize="23sp"
+                            android:textColor="@color/orange"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="80dp"
+                            android:layout_marginTop="16dp"/>
+                        <TextView
+                            android:id="@+id/tv_items_pizza"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="23 items"
+                            android:textSize="16sp"
+                            android:textColor="@color/pink"
+                            android:layout_below="@id/tv_pizza"
+                            android:layout_marginLeft="80dp"/>
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+              <ImageView
+                  android:id="@+id/image_pizaa"
+                  android:layout_width="100dp"
+                  android:layout_height="100dp"
+                  android:src="@drawable/pop_1"
+                  android:elevation="2dp"
+                  android:layout_margin="16dp"/>
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fab_pizza"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="6dp"
+                    android:backgroundTint="@color/white"
+                    android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+                    android:tint="@color/design_default_color_secondary"
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/row_hamburguer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_humburguer"
+                    android:layout_width="300dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="16dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="40dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/tv_humburguer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Barguer Duplo"
+                            android:textSize="23sp"
+                            android:textColor="@color/orange"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="80dp"
+                            android:layout_marginTop="16dp"/>
+                        <TextView
+                            android:id="@+id/tv_items_Hamburguer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="40 items"
+                            android:textSize="16sp"
+                            android:textColor="@color/pink"
+                            android:layout_below="@id/tv_humburguer"
+                            android:layout_marginLeft="80dp"/>
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+                <ImageView
+                    android:id="@+id/image_hamburguer"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/pop_2"
+                    android:elevation="2dp"
+                    android:layout_margin="16dp"/>
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fab_hamburguer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="6dp"
+                    android:backgroundTint="@color/white"
+                    android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+                    android:tint="@color/orange"
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/row_sanduiche"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_sanduiche"
+                    android:layout_width="300dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="16dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="40dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/tv_sanduiche"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sanduiche"
+                            android:textSize="23sp"
+                            android:textColor="@color/orange"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="80dp"
+                            android:layout_marginTop="16dp"/>
+                        <TextView
+                            android:id="@+id/tv_sanduiche_"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="20 items"
+                            android:textSize="16sp"
+                            android:textColor="@color/pink"
+                            android:layout_below="@id/tv_sanduiche"
+                            android:layout_marginLeft="80dp"/>
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+                <ImageView
+                    android:id="@+id/image_sanduiche"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/sanduiche"
+                    android:elevation="2dp"
+                    android:layout_margin="16dp"/>
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fab_sanduiche"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="6dp"
+                    android:backgroundTint="@color/white"
+                    android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+                    android:tint="@color/orange"
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/row_cock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_cock"
+                    android:layout_width="300dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="16dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="40dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/tv_cock"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="CockTail"
+                            android:textSize="23sp"
+                            android:textColor="@color/orange"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="80dp"
+                            android:layout_marginTop="16dp"/>
+                        <TextView
+                            android:id="@+id/tv_items_cock"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="23 items"
+                            android:textSize="16sp"
+                            android:textColor="@color/pink"
+                            android:layout_below="@id/tv_cock"
+                            android:layout_marginLeft="80dp"/>
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <ImageView
+                    android:id="@+id/image_cock"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:elevation="2dp"
+                    android:src="@drawable/cock_1" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fab_cok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="6dp"
+                    android:backgroundTint="@color/white"
+                    android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+                    android:tint="@color/design_default_color_secondary"
+                    tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/row_bear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_bear"
+                    android:layout_width="300dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="16dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="40dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/tv_bear"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cerveja"
+                            android:textSize="23sp"
+                            android:textColor="@color/orange"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="80dp"
+                            android:layout_marginTop="16dp"/>
+                        <TextView
+                            android:id="@+id/tv_items_bear"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="45 items"
+                            android:textSize="16sp"
+                            android:textColor="@color/pink"
+                            android:layout_below="@id/tv_bear"
+                            android:layout_marginLeft="80dp"/>
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <ImageView
+                    android:id="@+id/image_bear"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:elevation="2dp"
+                    android:src="@drawable/bear3" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fab_bear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="6dp"
+                    android:backgroundTint="@color/white"
+                    android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+                    android:tint="@color/design_default_color_secondary"
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</FrameLayout>
